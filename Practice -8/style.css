@@ -1,0 +1,23 @@
+html {
+    height: 100%;
+    width: 100%;
+    
+  }
+  body{
+   background-color:lightskyblue;
+    color:black;
+  }
+  
+  button{
+    background-color: pink;
+  }
+  .bulb{ 
+    background: greenyellow;
+   
+  }
+  
+   .bulbbox{
+  
+    height: 341px;
+    width: 341px; 
+  }
