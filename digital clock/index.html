@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    </head> 
+    <h1 id="edit">DIGITAL CLOCK</h1>
+     <div class="box">
+         <b>HOURS:</b>
+         <b id="c1" class="time"></b> 
+         <B>MINUTES:</B><b id="c2" class="time"></b> 
+         <b>SECONDS:</b><b id="c3" class="time"></b>
+          <B>CURRENT DATE:</B><b id="c4" class="time"></b>
+         </div> 
+         <body> 
+            <script> func\_t = () => { let c = new Date() let d = c.getSeconds() 
+                let f = c.getMinutes()
+                 let g = c.getHours() 
+                 let det = c.getDate()
+                  let yr = c.getFullYear() 
+                  let mon = c.getMonth()
+                   let send = det + "/" + mon + "/" + yr; 
+                   let eject = document.getElementsByClassName("time")
+                    eject[2].innerHTML = d 
+                    eject[1].innerHTML = f eject[0].innerHTML = g eject[3].innerHTML = send }
+                     setInterval(func\_t, 1000) </script> 
+                     </body>
+    <script>
+        func_t = () => {
+            let c = new Date()
+            let d = c.getSeconds()
+            let f = c.getMinutes()
+            let g = c.getHours()
+            let det = c.getDate()
+            let yr = c.getFullYear()
+            let mon = c.getMonth()+1
+            let send = det + "/" + mon + "/" + yr;
+            let eject = document.getElementsByClassName("time")
+            eject[2].innerHTML = d
+            eject[1].innerHTML = f
+            eject[0].innerHTML = g
+            eject[3].innerHTML = send
+        }
+        setInterval(func_t, 1000)
+        </script>
+    </body>
+    </html>
